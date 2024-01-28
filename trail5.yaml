@@ -1,0 +1,17 @@
+---
+apiVersion: v1
+kind: Pod
+metadata: 
+  name: trail5
+spec:
+  initContainers: 
+    - name: init-livingalpine
+    - image: alpine
+      args:
+        - sleep
+        - 30s
+  containers: 
+    - name: main-dyingnginx
+      image: nginx
+      
+      
