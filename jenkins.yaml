@@ -1,0 +1,11 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata: 
+  name: tail2-deploy
+spec: 
+  minReadySeconds: 30
+  replicas: 10
+  selector:
+    matchLabels:
+      app: jenkins #tried
